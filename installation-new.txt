@@ -85,7 +85,8 @@ kubectl get namespaces
 
 Recreate tokens: (if i want to add one more new linux machine then use the below command to add it to the kube cluster)
 ---------------
-kubeadm token create --print-join-command 
+kubeadm token create --print-join-command (This command will help you to add more worker nodes whenever you want to add to KUBE cluster.Whenevr you want to add you need the kubeadm join command with new key and new hash key algorithm.Thats is where this command will help.However this command you must run only in KUBE master server.You shouldnt run from any worker nodes)
+
 (you get some output from this command.
 copy that command and paste it to node4 and execute it.
 This will help you to add manually any new node to the kube cluster)
